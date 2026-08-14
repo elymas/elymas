@@ -1,0 +1,22 @@
+[profile]
+username = "elymas"
+name = "Lim Sung Hak"
+headline = "AI agent · education · product builder"
+email = "elymas@gmail.com"
+blog_url = "https://floaton.cloud/"
+blog_label = "floaton.cloud"
+
+[signal]
+focus = ["AI agents", "AI literacy", "product systems"]
+core_stack = ["Python", "TypeScript", "JavaScript", "Rust"]
+web_stack = ["Astro", "Three.js", "Vite"]
+building = "Small, useful AI-native products"
+projects = ["AI Chatbots", "Agent Seminar", "Solar Simulator"]
+
+[display]
+timezone = "Asia/Seoul"
+portrait_path = "assets/ascii-portrait.txt"
+template_path = "assets/profile-template.svg"
+dark_output = "assets/profile-dark.svg"
+light_output = "assets/profile-light.svg"
+cache_path = "cache/stats.json"

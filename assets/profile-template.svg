@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620" role="img" aria-labelledby="profile-title profile-description">
+  <title id="profile-title">{{TITLE}}</title>
+  <desc id="profile-description">{{DESCRIPTION}}</desc>
+  <defs>
+    <linearGradient id="portrait-wash" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="{{PANEL}}"/>
+      <stop offset="1" stop-color="{{BACKGROUND}}"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="{{GRID}}" stroke-width="1"/>
+    </pattern>
+    <clipPath id="card-clip">
+      <rect x="14" y="14" width="1092" height="592" rx="24"/>
+    </clipPath>
+  </defs>
+  <style>
+    .mono { font-family: "JetBrains Mono", "Cascadia Code", "SFMono-Regular", Consolas, monospace; }
+    .eyebrow { font: 700 11px "JetBrains Mono", "Cascadia Code", "SFMono-Regular", Consolas, monospace; letter-spacing: 2.1px; fill: {{ACCENT}}; }
+    .handle { font: 700 32px "JetBrains Mono", "Cascadia Code", "SFMono-Regular", Consolas, monospace; fill: {{TEXT}}; }
+    .at { fill: {{MUTED}}; }
+    .name { font: 600 14px "JetBrains Mono", "Cascadia Code", "SFMono-Regular", Consolas, monospace; fill: {{TEXT}}; }
+    .tagline { font: 500 14px "JetBrains Mono", "Cascadia Code", "SFMono-Regular", Consolas, monospace; fill: {{MUTED}}; }
+    .section { font: 700 11px "JetBrains Mono", "Cascadia Code", "SFMono-Regular", Consolas, monospace; letter-spacing: 1.8px; fill: {{ACCENT}}; }
+    .key { font: 700 12px "JetBrains Mono", "Cascadia Code", "SFMono-Regular", Consolas, monospace; letter-spacing: .7px; fill: {{MUTED}}; }
+    .value { font: 500 14px "JetBrains Mono", "Cascadia Code", "SFMono-Regular", Consolas, monospace; fill: {{TEXT}}; }
+    .value-accent { fill: {{ACCENT_TWO}}; }
+    .ascii { font: 500 13px "JetBrains Mono", "Cascadia Code", "SFMono-Regular", Consolas, monospace; fill: {{PORTRAIT}}; white-space: pre; }
+    .micro { font: 600 10px "JetBrains Mono", "Cascadia Code", "SFMono-Regular", Consolas, monospace; letter-spacing: 1.2px; fill: {{MUTED}}; }
+    .stat-label { font: 700 10px "JetBrains Mono", "Cascadia Code", "SFMono-Regular", Consolas, monospace; letter-spacing: 1.2px; fill: {{MUTED}}; }
+    .stat-value { font: 700 23px "JetBrains Mono", "Cascadia Code", "SFMono-Regular", Consolas, monospace; fill: {{TEXT}}; }
+  </style>
+
+  <rect width="1120" height="620" fill="{{BACKGROUND}}"/>
+  <rect x="18" y="20" width="1092" height="592" rx="24" fill="{{SHADOW}}" opacity=".42"/>
+  <rect x="14" y="14" width="1092" height="592" rx="24" fill="{{SURFACE}}" stroke="{{BORDER}}" stroke-width="1.5"/>
+  <g clip-path="url(#card-clip)">
+    <rect x="14" y="14" width="354" height="592" fill="url(#portrait-wash)"/>
+    <rect x="14" y="14" width="1092" height="592" fill="url(#grid)" opacity=".42"/>
+    <path d="M14 493C112 437 212 451 368 370V606H14Z" fill="{{ACCENT_TWO}}" opacity=".055"/>
+    <circle cx="66" cy="62" r="4" fill="{{ACCENT}}"/>
+    <circle cx="82" cy="62" r="4" fill="{{ACCENT_TWO}}"/>
+    <circle cx="98" cy="62" r="4" fill="{{MUTED}}" opacity=".55"/>
+    <path d="M340 14V606" stroke="{{BORDER}}" stroke-width="1"/>
+  </g>
+
+  <text x="48" y="95" class="ascii">{{ASCII_ART}}</text>
+  <path d="M48 539H304" stroke="{{BORDER}}"/>
+  <text x="48" y="559" class="micro">PORTRAIT / GITHUB AVATAR → ASCII</text>
+  <text x="48" y="581" class="micro" fill="{{ACCENT_TWO}}">FLOAT ON · BUILD IN PUBLIC</text>
+
+  <text x="402" y="52" class="eyebrow">PROFILE / LIVE SIGNAL</text>
+  <text x="402" y="91" class="handle">{{USERNAME}}<tspan class="at">@github</tspan></text>
+  <text x="402" y="120" class="name">{{NAME}}<tspan class="tagline">  /  {{HEADLINE}}</tspan></text>
+  <path d="M402 145H1064" stroke="{{BORDER}}"/>
+  <path d="M402 145H500" stroke="{{ACCENT}}" stroke-width="2"/>
+
+  <text x="402" y="175" class="section">01 / SIGNAL</text>
+  <text x="402" y="205" class="key">FOCUS</text>
+  <text x="520" y="205" class="value">{{FOCUS}}</text>
+  <text x="402" y="236" class="key">CORE</text>
+  <text x="520" y="236" class="value">{{CORE_STACK}}</text>
+  <text x="402" y="267" class="key">WEB / 3D</text>
+  <text x="520" y="267" class="value">{{WEB_STACK}}</text>
+
+  <text x="402" y="301" class="section">02 / CURRENT LOOP</text>
+  <text x="402" y="331" class="key">BUILDING</text>
+  <text x="520" y="331" class="value">{{BUILDING}}</text>
+  <text x="402" y="362" class="key">PROJECTS</text>
+  <text x="520" y="362" class="value">{{PROJECTS}}</text>
+  <text x="402" y="393" class="key">TOP SIGNAL</text>
+  <text x="520" y="393" class="value value-accent">{{TOP_REPOSITORY}} · {{TOP_REPOSITORY_STARS}} stars</text>
+
+  <text x="402" y="427" class="section">03 / CONTACT</text>
+  <text x="402" y="457" class="key">WEB</text>
+  <text x="520" y="457" class="value value-accent">{{BLOG}}</text>
+  <text x="402" y="488" class="key">MAIL</text>
+  <text x="520" y="488" class="value">{{EMAIL}}</text>
+
+  <g>
+    <rect x="402" y="516" width="153" height="64" rx="10" fill="{{PANEL}}" stroke="{{BORDER}}"/>
+    <rect x="569" y="516" width="153" height="64" rx="10" fill="{{PANEL}}" stroke="{{BORDER}}"/>
+    <rect x="736" y="516" width="153" height="64" rx="10" fill="{{PANEL}}" stroke="{{BORDER}}"/>
+    <rect x="903" y="516" width="153" height="64" rx="10" fill="{{PANEL}}" stroke="{{BORDER}}"/>
+    <text x="418" y="537" class="stat-label">REPOSITORIES</text>
+    <text x="418" y="566" class="stat-value">{{REPOSITORIES}}</text>
+    <text x="585" y="537" class="stat-label">STARS EARNED</text>
+    <text x="585" y="566" class="stat-value">{{STARS}}</text>
+    <text x="752" y="537" class="stat-label">FOLLOWERS</text>
+    <text x="752" y="566" class="stat-value">{{FOLLOWERS}}</text>
+    <text x="919" y="537" class="stat-label">GITHUB YEARS</text>
+    <text x="919" y="566" class="stat-value">{{GITHUB_YEARS}}</text>
+  </g>
+  <text x="1056" y="596" text-anchor="end" class="micro">SYNC / {{REFRESHED_ON}}</text>
+</svg>
