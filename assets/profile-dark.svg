@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620" role="img" aria-labelledby="profile-title profile-description">
   <title id="profile-title">Lim Sung Hak — GitHub profile</title>
-  <desc id="profile-description">AI agent · education · product builder. 18 public repositories, 43 stars, and 11 followers.</desc>
+  <desc id="profile-description">AI agent · education · product builder. 19 public repositories, 43 stars, and 11 followers.</desc>
   <defs>
     <linearGradient id="portrait-wash" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#12231c"/>
@@ -106,7 +106,7 @@
     <rect x="736" y="516" width="153" height="64" rx="10" fill="#12231c" stroke="#25463a"/>
     <rect x="903" y="516" width="153" height="64" rx="10" fill="#12231c" stroke="#25463a"/>
     <text x="418" y="537" class="stat-label">REPOSITORIES</text>
-    <text x="418" y="566" class="stat-value">18</text>
+    <text x="418" y="566" class="stat-value">19</text>
     <text x="585" y="537" class="stat-label">STARS EARNED</text>
     <text x="585" y="566" class="stat-value">43</text>
     <text x="752" y="537" class="stat-label">FOLLOWERS</text>
@@ -114,5 +114,5 @@
     <text x="919" y="537" class="stat-label">GITHUB YEARS</text>
     <text x="919" y="566" class="stat-value">9</text>
   </g>
-  <text x="1056" y="596" text-anchor="end" class="micro">SYNC / 2026-08-18 KST</text>
+  <text x="1056" y="596" text-anchor="end" class="micro">SYNC / 2026-08-19 KST</text>
 </svg>
